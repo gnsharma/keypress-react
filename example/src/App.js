@@ -1,10 +1,19 @@
 import React from 'react'
 
-import { ExampleComponent } from 'react-keypress'
-import 'react-keypress/dist/index.css'
+import ComponentA from './ComponentA'
+import ComponentB from './ComponentB'
+import ComponentC from './ComponentC'
+import ListShortcuts from './ListShortcuts'
 
 const App = () => {
-  return <ExampleComponent text="Create React Library Example 😄" />
+  return (
+    <div className='app'>
+      <ComponentA />
+      <ComponentB />
+      <ComponentC />
+      <ListShortcuts />
+    </div>
+  )
 }
 
 export default App
